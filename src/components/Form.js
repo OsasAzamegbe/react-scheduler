@@ -12,8 +12,8 @@ const Form = () => {
                 <div className="select">
                     <select name="todos" className="filter-todos form-select" aria-label="select todos" >
                         <option value="all" >All</option>
-                        <option value="completed" >Completed</option>
-                        <option value="uncompleted" >Uncompleted</option>
+                        <option value="done" >Done</option>
+                        <option value="pending" >Pending</option>
                     </select>
                 </div>
             </form>
