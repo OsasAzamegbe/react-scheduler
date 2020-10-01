@@ -1,5 +1,5 @@
 import React from 'react';
-import './Form.css';
+
 
 const Form = ({inputText, setInputText, todos, setTodos, id, setId}) => {
 

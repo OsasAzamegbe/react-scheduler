@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
+import './components/Todo.css';
+import './components/Form.css';
 import Form from './components/Form'
 import TodoList from './components/TodoList'
 
@@ -23,7 +25,8 @@ function App() {
       id={id} 
       setId={setId} />
 
-      <TodoList/>
+      <TodoList
+      todos={todos} />
     </div>
   );
 }
