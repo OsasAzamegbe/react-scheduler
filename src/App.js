@@ -26,7 +26,8 @@ function App() {
       setId={setId} />
 
       <TodoList
-      todos={todos} />
+      todos={todos}
+      setTodos={setTodos} />
     </div>
   );
 }
