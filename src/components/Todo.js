@@ -8,7 +8,7 @@ const Todo = ({todo, todos, setTodos}) => {
             if (item.id === todo.id) {
                 return {
                     ...item,
-                    completed: !item.done
+                    done: !item.done
                 }
             }
             return item;
@@ -21,7 +21,7 @@ const Todo = ({todo, todos, setTodos}) => {
 
     return (
         <div className="todo">
-            <li className="todo-item" >{todo.text}</li>
+            <li className={`todo-item ${todo.done ? "done" : ""}`} >{todo.text}</li>
             <button onClick={completeHandler} className="complete-btn">
                 <i className="fas fa-check"></i>
             </button>
