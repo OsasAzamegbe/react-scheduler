@@ -11,12 +11,12 @@ const Todo = ({todo}) => {
     // }
     return (
         <div className="todo">
-            <li className="todo-item" >{todo.text}</li>
+            <li className="todo-item" >Hey</li>
             <button className="complete-btn">
-                <i></i>
+                <i className="fas fa-check"></i>
             </button>
             <button className="trash-btn">
-                <i></i>
+                <i className="fas fa-trash"></i>
             </button>
         </div> 
     );

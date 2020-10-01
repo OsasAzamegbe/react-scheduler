@@ -9,14 +9,13 @@ const Form = ({inputText, setInputText, todos, setTodos, id, setId}) => {
 
     const submitTodoHandler = (e) => {
         e.preventDefault()
-        console.log("submited")
         const newTodo = {
             text: inputText,
             done: false,
             id: id
         }
         setTodos([...todos, newTodo])
-        setId(id++)
+        setId(id + 1)
         setInputText("")
     }
 
