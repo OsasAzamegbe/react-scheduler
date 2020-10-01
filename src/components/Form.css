@@ -1,23 +1,41 @@
 .select{
-    display: inline;
+    display: inline;   
+}
+
+button, input, optgroup, select, textarea{
+    font-size: small;
 }
 
 .filter-todos{
+    display: inline;
     margin: 30px;
     padding: 10px;
     width: 20vmin;
     border: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.637);
+    cursor: pointer;
+}
+
+option{
+    cursor: pointer;
 }
 
 .todo-input{
     padding: 10px;
     width: 50vmin;
     border: none;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.637);
 }
 
 .todo-button{
     margin: 10px;
-    padding: 10px 20px;
+    padding: 0;
     border: none;
     cursor: pointer;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.637);
+}
+
+.todo-button:focus{
+    background: rgb(20, 20, 20);
 }
