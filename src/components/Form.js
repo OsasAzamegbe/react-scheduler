@@ -1,16 +1,29 @@
 import React from 'react';
 import './Form.css';
 
-const Form = ({setInputText}) => {
+const Form = ({inputText, setInputText, todos, setTodos, id, setId}) => {
 
     const inputTextHandler = (e) => {
         setInputText(e.target.value);
     }
 
+    const submitTodoHandler = (e) => {
+        e.preventDefault()
+        console.log("submited")
+        const newTodo = {
+            text: inputText,
+            done: false,
+            id: id
+        }
+        setTodos([...todos, newTodo])
+        setId(id++)
+        setInputText("")
+    }
+
     return (
         <div>
-            <form>
-                <input onChange={inputTextHandler} className="todo-input" type="text" placeholder="new Todo item" />
+            <form onSubmit={submitTodoHandler}>
+                <input onChange={inputTextHandler} value={inputText} className="todo-input" type="text" placeholder="new Todo item" />
                 <button className="todo-button" type="submit" >
                     ADD
                 </button>
