@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A scheduling application for keeping track of tasks, deliverables, and activities. Created with react.
+
+**Live version of this web app is available at https://react-scheduler-app.netlify.app/**
 
 ## Available Scripts
 
