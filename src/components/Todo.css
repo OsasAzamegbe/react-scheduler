@@ -30,11 +30,6 @@
     padding: 0rem 0.5rem;
 }
 
-.fall {
-    transform: translateY(10rem) rotateZ(20deg);
-    opacity: 0;
-}
-  
 .done {
     text-decoration: line-through;
     opacity: 0.5;
