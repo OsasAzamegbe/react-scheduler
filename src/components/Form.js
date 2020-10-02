@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Form = ({inputText, setInputText, todos, setTodos, id, setId}) => {
+const Form = ({inputText, setInputText, todos, setTodos, id, setId, setStatus}) => {
 
     const inputTextHandler = (e) => {
         setInputText(e.target.value);
@@ -19,6 +19,10 @@ const Form = ({inputText, setInputText, todos, setTodos, id, setId}) => {
         setInputText("")
     }
 
+    const selectHandler = (e) => {
+        setStatus(e.target.value)
+    }
+
     return (
         <div>
             <form onSubmit={submitTodoHandler}>
@@ -27,7 +31,7 @@ const Form = ({inputText, setInputText, todos, setTodos, id, setId}) => {
                     ADD
                 </button>
                 <div className="select">
-                    <select name="todos" className="filter-todos form-select" aria-label="select todos" >
+                    <select onChange={selectHandler} name="todos" className="filter-todos form-select" aria-label="select todos" >
                         <option value="all" >All</option>
                         <option value="done" >Done</option>
                         <option value="pending" >Pending</option>
