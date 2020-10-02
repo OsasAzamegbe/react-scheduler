@@ -16,9 +16,7 @@ function App() {
 
   useEffect(() =>{
     const getLocalTodos = () => {
-      if (localStorage.getItem('todos') === null ){
-        localStorage.setItem('todos', JSON.stringify([]))
-      } else {
+      if (localStorage.getItem('todos')){
         let localTodos = JSON.parse(localStorage.getItem('todos'))
         setTodos(localTodos)
       }
