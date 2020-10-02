@@ -16,8 +16,10 @@ function App() {
 
   useEffect(() =>{
     const getLocalTodos = () => {
-      let localTodos = JSON.parse(localStorage.getItem('todos'))
-      setTodos(localTodos)
+      if (localStorage.getItem('todos')){
+        let localTodos = JSON.parse(localStorage.getItem('todos'))
+        setTodos(localTodos)
+      }
     }
 
     getLocalTodos();
